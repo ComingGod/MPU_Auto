@@ -1,0 +1,3193 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="0" hostname="NXL53297" name="pytest" skipped="0" tests="28" time="1033.293" timestamp="2020-04-17T10:13:38.069000"><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="119" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_[1]" time="38.379"><system-err>2020-04-17 10:13:38 ---------------set serial download mode---------------
+2020-04-17 10:13:39 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:13:40 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:13:41 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:13:41 ---------------reset board---------------
+2020-04-17 10:13:42 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:13:42 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=1 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_1.bin
+2020-04-17 10:13:43 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:1
+sclk_freq = 1
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_1.bin
+
+2020-04-17 10:13:43 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_1
+2020-04-17 10:14:02 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.122s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (5.558s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_1.bin
+2:26&gt;Okay (0.045s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.243s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:14:02 ---------------set flexspi boot---------------
+2020-04-17 10:14:03 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:14:04 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:14:05 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:14:05 ---------------reset board---------------
+2020-04-17 10:14:06 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:14:06 -------------Clear console buffer---------------
+2020-04-17 10:14:06 -------------Clear console buffer---------------
+2020-04-17 10:14:08 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:14:08 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 26C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 9e:bd:dd:25:fa:7b
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:14:12 --------Finding hello world Flexspi---------
+2020-04-17 10:14:12 hello world Flexspi
+2020-04-17 10:14:12 ---------------set boot pin as None---------------
+2020-04-17 10:14:13 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:14:14 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:14:15 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:14:15 ---------------reset board---------------
+2020-04-17 10:14:16 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="119" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_[2]" time="36.499"><system-err>2020-04-17 10:14:16 ---------------set serial download mode---------------
+2020-04-17 10:14:17 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:14:19 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:14:20 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:14:20 ---------------reset board---------------
+2020-04-17 10:14:21 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:14:21 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=2 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_2.bin
+2020-04-17 10:14:21 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:1
+sclk_freq = 2
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_2.bin
+
+2020-04-17 10:14:21 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_2
+2020-04-17 10:14:38 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.771s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_2.bin
+2:26&gt;Okay (0.045s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.237s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:14:38 ---------------set flexspi boot---------------
+2020-04-17 10:14:39 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:14:40 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:14:41 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:14:41 ---------------reset board---------------
+2020-04-17 10:14:42 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:14:43 -------------Clear console buffer---------------
+2020-04-17 10:14:43 -------------Clear console buffer---------------
+2020-04-17 10:14:45 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:14:45 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 26C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 62:8c:c7:28:59:25
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:14:48 --------Finding hello world Flexspi---------
+2020-04-17 10:14:48 hello world Flexspi
+2020-04-17 10:14:48 ---------------set boot pin as None---------------
+2020-04-17 10:14:49 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:14:50 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:14:51 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:14:51 ---------------reset board---------------
+2020-04-17 10:14:52 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="119" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_[3]" time="36.202"><system-err>2020-04-17 10:14:53 ---------------set serial download mode---------------
+2020-04-17 10:14:54 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:14:55 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:14:56 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:14:56 ---------------reset board---------------
+2020-04-17 10:14:57 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:14:57 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=3 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_3.bin
+2020-04-17 10:14:57 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:1
+sclk_freq = 3
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_3.bin
+
+2020-04-17 10:14:57 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_3
+2020-04-17 10:15:15 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.951s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.017s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.775s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_3.bin
+2:26&gt;Okay (0.044s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.249s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:15:15 ---------------set flexspi boot---------------
+2020-04-17 10:15:16 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:15:17 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:15:18 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:15:18 ---------------reset board---------------
+2020-04-17 10:15:19 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:15:19 -------------Clear console buffer---------------
+2020-04-17 10:15:19 -------------Clear console buffer---------------
+2020-04-17 10:15:21 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:15:21 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 26C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 22:2b:aa:db:da:6c
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:15:25 --------Finding hello world Flexspi---------
+2020-04-17 10:15:25 hello world Flexspi
+2020-04-17 10:15:25 ---------------set boot pin as None---------------
+2020-04-17 10:15:26 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:15:27 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:15:28 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:15:28 ---------------reset board---------------
+2020-04-17 10:15:29 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="119" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_[4]" time="36.278"><system-err>2020-04-17 10:15:29 ---------------set serial download mode---------------
+2020-04-17 10:15:30 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:15:31 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:15:32 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:15:32 ---------------reset board---------------
+2020-04-17 10:15:33 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:15:33 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=4 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_4.bin
+2020-04-17 10:15:33 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:1
+sclk_freq = 4
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_4.bin
+
+2020-04-17 10:15:33 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_4
+2020-04-17 10:15:51 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.071s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.773s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_4.bin
+2:26&gt;Okay (0.046s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.241s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:15:51 ---------------set flexspi boot---------------
+2020-04-17 10:15:52 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:15:53 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:15:54 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:15:54 ---------------reset board---------------
+2020-04-17 10:15:55 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:15:55 -------------Clear console buffer---------------
+2020-04-17 10:15:55 -------------Clear console buffer---------------
+2020-04-17 10:15:57 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:15:57 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 6a:ce:30:91:1d:a9
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:16:01 --------Finding hello world Flexspi---------
+2020-04-17 10:16:01 hello world Flexspi
+2020-04-17 10:16:01 ---------------set boot pin as None---------------
+2020-04-17 10:16:02 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:16:03 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:16:04 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:16:04 ---------------reset board---------------
+2020-04-17 10:16:05 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="119" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_[5]" time="37.268"><system-err>2020-04-17 10:16:06 ---------------set serial download mode---------------
+2020-04-17 10:16:07 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:16:08 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:16:09 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:16:09 ---------------reset board---------------
+2020-04-17 10:16:10 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:16:10 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=5 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_5.bin
+2020-04-17 10:16:10 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:1
+sclk_freq = 5
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_5.bin
+
+2020-04-17 10:16:10 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_5
+2020-04-17 10:16:28 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.083s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.77s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_5.bin
+2:26&gt;Okay (0.046s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.237s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:16:28 ---------------set flexspi boot---------------
+2020-04-17 10:16:29 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:16:30 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:16:31 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:16:31 ---------------reset board---------------
+2020-04-17 10:16:32 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:16:32 -------------Clear console buffer---------------
+2020-04-17 10:16:32 -------------Clear console buffer---------------
+2020-04-17 10:16:34 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:16:34 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - d6:91:c9:3d:c0:c6
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:16:38 --------Finding hello world Flexspi---------
+2020-04-17 10:16:38 hello world Flexspi
+2020-04-17 10:16:38 ---------------set boot pin as None---------------
+2020-04-17 10:16:39 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:16:40 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:16:41 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:16:41 ---------------reset board---------------
+2020-04-17 10:16:42 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="119" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_[6]" time="37.539"><system-err>2020-04-17 10:16:43 ---------------set serial download mode---------------
+2020-04-17 10:16:44 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:16:45 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:16:46 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:16:46 ---------------reset board---------------
+2020-04-17 10:16:47 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:16:47 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=6 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_6.bin
+2020-04-17 10:16:47 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:1
+sclk_freq = 6
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_6.bin
+
+2020-04-17 10:16:47 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_6
+2020-04-17 10:17:06 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.958s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.016s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.78s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_6.bin
+2:26&gt;Okay (0.045s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.248s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:17:06 ---------------set flexspi boot---------------
+2020-04-17 10:17:07 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:17:08 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:17:09 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:17:09 ---------------reset board---------------
+2020-04-17 10:17:10 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:17:10 -------------Clear console buffer---------------
+2020-04-17 10:17:10 -------------Clear console buffer---------------
+2020-04-17 10:17:12 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:17:12 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 86:64:b5:5b:f7:5b
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:17:16 --------Finding hello world Flexspi---------
+2020-04-17 10:17:16 hello world Flexspi
+2020-04-17 10:17:16 ---------------set boot pin as None---------------
+2020-04-17 10:17:17 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:17:18 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:17:19 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:17:19 ---------------reset board---------------
+2020-04-17 10:17:20 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="119" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_[7]" time="36.807"><system-err>2020-04-17 10:17:20 ---------------set serial download mode---------------
+2020-04-17 10:17:21 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:17:22 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:17:23 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:17:23 ---------------reset board---------------
+2020-04-17 10:17:24 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:17:24 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=7 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_7.bin
+2020-04-17 10:17:25 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:1
+sclk_freq = 7
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_7.bin
+
+2020-04-17 10:17:25 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_7
+2020-04-17 10:17:43 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.899s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.014s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.772s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_4B_7.bin
+2:26&gt;Okay (0.052s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.239s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:17:43 ---------------set flexspi boot---------------
+2020-04-17 10:17:44 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:17:45 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:17:46 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:17:46 ---------------reset board---------------
+2020-04-17 10:17:47 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:17:47 -------------Clear console buffer---------------
+2020-04-17 10:17:47 -------------Clear console buffer---------------
+2020-04-17 10:17:49 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:17:49 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 7a:39:ce:f1:30:17
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:17:53 --------Finding hello world Flexspi---------
+2020-04-17 10:17:53 hello world Flexspi
+2020-04-17 10:17:53 ---------------set boot pin as None---------------
+2020-04-17 10:17:54 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:17:55 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:17:56 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:17:56 ---------------reset board---------------
+2020-04-17 10:17:57 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="137" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_[1]" time="37.687"><system-err>2020-04-17 10:17:57 ---------------set serial download mode---------------
+2020-04-17 10:17:58 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:17:59 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:18:00 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:18:00 ---------------reset board---------------
+2020-04-17 10:18:01 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:18:01 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:0 patch_offset=0x400 serialClkFreq=1 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_1.bin
+2020-04-17 10:18:01 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:0
+sclk_freq = 1
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_1.bin
+
+2020-04-17 10:18:01 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_1
+2020-04-17 10:18:20 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.011s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.033s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.79s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_1.bin
+2:26&gt;Okay (0.047s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.248s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:18:20 ---------------set flexspi boot---------------
+2020-04-17 10:18:21 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:18:22 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:18:23 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:18:23 ---------------reset board---------------
+2020-04-17 10:18:24 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:18:24 -------------Clear console buffer---------------
+2020-04-17 10:18:24 -------------Clear console buffer---------------
+2020-04-17 10:18:26 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:18:26 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 9e:bd:dd:25:fa:7b
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:18:30 --------Finding hello world Flexspi---------
+2020-04-17 10:18:30 hello world Flexspi
+2020-04-17 10:18:30 ---------------set boot pin as None---------------
+2020-04-17 10:18:31 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:18:32 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:18:33 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:18:33 ---------------reset board---------------
+2020-04-17 10:18:34 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="137" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_[2]" time="37.048"><system-err>2020-04-17 10:18:35 ---------------set serial download mode---------------
+2020-04-17 10:18:36 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:18:37 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:18:38 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:18:38 ---------------reset board---------------
+2020-04-17 10:18:39 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:18:39 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:0 patch_offset=0x400 serialClkFreq=2 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_2.bin
+2020-04-17 10:18:40 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:0
+sclk_freq = 2
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_2.bin
+
+2020-04-17 10:18:40 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_2
+2020-04-17 10:18:57 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.042s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.774s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_2.bin
+2:26&gt;Okay (0.047s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.239s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:18:57 ---------------set flexspi boot---------------
+2020-04-17 10:18:58 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:18:59 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:19:00 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:19:00 ---------------reset board---------------
+2020-04-17 10:19:01 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:19:01 -------------Clear console buffer---------------
+2020-04-17 10:19:02 -------------Clear console buffer---------------
+2020-04-17 10:19:03 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:19:03 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 62:8c:c7:28:59:25
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:19:07 --------Finding hello world Flexspi---------
+2020-04-17 10:19:07 hello world Flexspi
+2020-04-17 10:19:07 ---------------set boot pin as None---------------
+2020-04-17 10:19:08 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:19:09 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:19:10 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:19:10 ---------------reset board---------------
+2020-04-17 10:19:11 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="137" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_[3]" time="36.984"><system-err>2020-04-17 10:19:12 ---------------set serial download mode---------------
+2020-04-17 10:19:13 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:19:14 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:19:15 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:19:15 ---------------reset board---------------
+2020-04-17 10:19:16 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:19:16 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:0 patch_offset=0x400 serialClkFreq=3 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_3.bin
+2020-04-17 10:19:16 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:0
+sclk_freq = 3
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_3.bin
+
+2020-04-17 10:19:16 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_3
+2020-04-17 10:19:34 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.046s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.777s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_3.bin
+2:26&gt;Okay (0.05s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.246s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:19:34 ---------------set flexspi boot---------------
+2020-04-17 10:19:35 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:19:36 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:19:37 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:19:37 ---------------reset board---------------
+2020-04-17 10:19:38 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:19:38 -------------Clear console buffer---------------
+2020-04-17 10:19:39 -------------Clear console buffer---------------
+2020-04-17 10:19:40 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:19:40 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 4a:20:c4:e8:9d:93
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:19:44 --------Finding hello world Flexspi---------
+2020-04-17 10:19:44 hello world Flexspi
+2020-04-17 10:19:44 ---------------set boot pin as None---------------
+2020-04-17 10:19:45 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:19:46 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:19:47 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:19:47 ---------------reset board---------------
+2020-04-17 10:19:48 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="137" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_[4]" time="36.642"><system-err>2020-04-17 10:19:49 ---------------set serial download mode---------------
+2020-04-17 10:19:50 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:19:51 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:19:52 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:19:52 ---------------reset board---------------
+2020-04-17 10:19:53 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:19:53 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:0 patch_offset=0x400 serialClkFreq=4 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_4.bin
+2020-04-17 10:19:53 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:0
+sclk_freq = 4
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_4.bin
+
+2020-04-17 10:19:53 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_4
+2020-04-17 10:20:11 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.009s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.772s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_4.bin
+2:26&gt;Okay (0.047s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.251s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:20:11 ---------------set flexspi boot---------------
+2020-04-17 10:20:12 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:20:13 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:20:14 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:20:14 ---------------reset board---------------
+2020-04-17 10:20:15 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:20:15 -------------Clear console buffer---------------
+2020-04-17 10:20:15 -------------Clear console buffer---------------
+2020-04-17 10:20:17 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:20:17 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 6a:ce:30:91:1d:a9
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:20:21 --------Finding hello world Flexspi---------
+2020-04-17 10:20:21 hello world Flexspi
+2020-04-17 10:20:21 ---------------set boot pin as None---------------
+2020-04-17 10:20:22 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:20:23 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:20:24 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:20:24 ---------------reset board---------------
+2020-04-17 10:20:25 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="137" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_[5]" time="37.739"><system-err>2020-04-17 10:20:26 ---------------set serial download mode---------------
+2020-04-17 10:20:27 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:20:28 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:20:29 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:20:29 ---------------reset board---------------
+2020-04-17 10:20:30 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:20:30 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:0 patch_offset=0x400 serialClkFreq=5 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_5.bin
+2020-04-17 10:20:30 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:0
+sclk_freq = 5
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_5.bin
+
+2020-04-17 10:20:30 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_5
+2020-04-17 10:20:49 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.228s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.788s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_5.bin
+2:26&gt;Okay (0.046s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.253s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:20:49 ---------------set flexspi boot---------------
+2020-04-17 10:20:50 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:20:51 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:20:52 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:20:52 ---------------reset board---------------
+2020-04-17 10:20:53 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:20:53 -------------Clear console buffer---------------
+2020-04-17 10:20:53 -------------Clear console buffer---------------
+2020-04-17 10:20:55 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:20:55 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 32:96:8a:78:3f:52
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:20:59 --------Finding hello world Flexspi---------
+2020-04-17 10:20:59 hello world Flexspi
+2020-04-17 10:20:59 ---------------set boot pin as None---------------
+2020-04-17 10:21:00 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:21:01 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:21:02 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:21:02 ---------------reset board---------------
+2020-04-17 10:21:03 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="137" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_[6]" time="36.775"><system-err>2020-04-17 10:21:03 ---------------set serial download mode---------------
+2020-04-17 10:21:04 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:21:05 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:21:06 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:21:06 ---------------reset board---------------
+2020-04-17 10:21:07 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:21:07 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:0 patch_offset=0x400 serialClkFreq=6 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_6.bin
+2020-04-17 10:21:08 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:0
+sclk_freq = 6
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_6.bin
+
+2020-04-17 10:21:08 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_6
+2020-04-17 10:21:26 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.072s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.017s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.783s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_6.bin
+2:26&gt;Okay (0.05s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.257s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:21:26 ---------------set flexspi boot---------------
+2020-04-17 10:21:27 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:21:28 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:21:29 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:21:29 ---------------reset board---------------
+2020-04-17 10:21:30 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:21:30 -------------Clear console buffer---------------
+2020-04-17 10:21:30 -------------Clear console buffer---------------
+2020-04-17 10:21:32 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:21:32 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - de:3c:0f:b2:d5:a0
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:21:35 --------Finding hello world Flexspi---------
+2020-04-17 10:21:35 hello world Flexspi
+2020-04-17 10:21:35 ---------------set boot pin as None---------------
+2020-04-17 10:21:36 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:21:37 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:21:38 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:21:38 ---------------reset board---------------
+2020-04-17 10:21:39 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="137" name="test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_[7]" time="36.896"><system-err>2020-04-17 10:21:40 ---------------set serial download mode---------------
+2020-04-17 10:21:41 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:21:42 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:21:43 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:21:43 ---------------reset board---------------
+2020-04-17 10:21:44 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:21:44 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:single,is_ddr:0,is_32bit:0 patch_offset=0x400 serialClkFreq=7 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_7.bin
+2020-04-17 10:21:44 vendor:micron
+pad:single
+is_ddr:0
+is_32bit:0
+sclk_freq = 7
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_7.bin
+
+2020-04-17 10:21:44 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_7
+2020-04-17 10:22:02 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.104s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.777s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_single_sdr_3B_7.bin
+2:26&gt;Okay (0.045s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.242s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:22:02 ---------------set flexspi boot---------------
+2020-04-17 10:22:04 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:22:05 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:22:06 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:22:06 ---------------reset board---------------
+2020-04-17 10:22:07 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:22:07 -------------Clear console buffer---------------
+2020-04-17 10:22:07 -------------Clear console buffer---------------
+2020-04-17 10:22:09 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:22:09 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 96:36:a4:ce:43:8f
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:22:12 --------Finding hello world Flexspi---------
+2020-04-17 10:22:12 hello world Flexspi
+2020-04-17 10:22:12 ---------------set boot pin as None---------------
+2020-04-17 10:22:13 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:22:14 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:22:15 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:22:15 ---------------reset board---------------
+2020-04-17 10:22:16 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="156" name="test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_[1]" time="36.949"><system-err>2020-04-17 10:22:17 ---------------set serial download mode---------------
+2020-04-17 10:22:18 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:22:19 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:22:20 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:22:20 ---------------reset board---------------
+2020-04-17 10:22:21 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:22:21 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:1,is_32bit:1 patch_offset=0x400 serialClkFreq=1 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_1.bin
+2020-04-17 10:22:21 vendor:micron
+pad:octal
+is_ddr:1
+is_32bit:1
+sclk_freq = 1
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_1.bin
+
+2020-04-17 10:22:21 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_1
+2020-04-17 10:22:39 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.992s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.016s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.781s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_1.bin
+2:26&gt;Okay (0.045s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.248s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:22:39 ---------------set flexspi boot---------------
+2020-04-17 10:22:40 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:22:41 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:22:43 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:22:43 ---------------reset board---------------
+2020-04-17 10:22:44 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:22:44 -------------Clear console buffer---------------
+2020-04-17 10:22:44 -------------Clear console buffer---------------
+2020-04-17 10:22:46 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:22:46 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 1e:02:17:7c:9f:a9
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:22:49 --------Finding hello world Flexspi---------
+2020-04-17 10:22:49 hello world Flexspi
+2020-04-17 10:22:49 ---------------set boot pin as None---------------
+2020-04-17 10:22:50 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:22:51 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:22:52 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:22:52 ---------------reset board---------------
+2020-04-17 10:22:53 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="156" name="test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_[2]" time="37.422"><system-err>2020-04-17 10:22:54 ---------------set serial download mode---------------
+2020-04-17 10:22:55 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:22:56 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:22:57 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:22:57 ---------------reset board---------------
+2020-04-17 10:22:58 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:22:58 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:1,is_32bit:1 patch_offset=0x400 serialClkFreq=2 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_2.bin
+2020-04-17 10:22:58 vendor:micron
+pad:octal
+is_ddr:1
+is_32bit:1
+sclk_freq = 2
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_2.bin
+
+2020-04-17 10:22:58 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_2
+2020-04-17 10:23:17 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.302s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.014s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.774s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_2.bin
+2:26&gt;Okay (0.046s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.25s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:23:17 ---------------set flexspi boot---------------
+2020-04-17 10:23:18 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:23:19 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:23:20 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:23:20 ---------------reset board---------------
+2020-04-17 10:23:21 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:23:21 -------------Clear console buffer---------------
+2020-04-17 10:23:21 -------------Clear console buffer---------------
+2020-04-17 10:23:23 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:23:23 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 6e:53:41:a0:e0:8e
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:23:27 --------Finding hello world Flexspi---------
+2020-04-17 10:23:27 hello world Flexspi
+2020-04-17 10:23:27 ---------------set boot pin as None---------------
+2020-04-17 10:23:28 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:23:29 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:23:30 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:23:30 ---------------reset board---------------
+2020-04-17 10:23:31 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="156" name="test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_[3]" time="37.052"><system-err>2020-04-17 10:23:31 ---------------set serial download mode---------------
+2020-04-17 10:23:32 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:23:33 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:23:34 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:23:34 ---------------reset board---------------
+2020-04-17 10:23:35 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:23:35 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:1,is_32bit:1 patch_offset=0x400 serialClkFreq=3 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_3.bin
+2020-04-17 10:23:36 vendor:micron
+pad:octal
+is_ddr:1
+is_32bit:1
+sclk_freq = 3
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_3.bin
+
+2020-04-17 10:23:36 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_3
+2020-04-17 10:23:54 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.967s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.006s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.014s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.785s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_3.bin
+2:26&gt;Okay (0.047s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.248s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:23:54 ---------------set flexspi boot---------------
+2020-04-17 10:23:55 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:23:56 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:23:57 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:23:57 ---------------reset board---------------
+2020-04-17 10:23:58 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:23:58 -------------Clear console buffer---------------
+2020-04-17 10:23:58 -------------Clear console buffer---------------
+2020-04-17 10:24:00 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:24:00 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 2e:51:c3:a6:fa:ad
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:24:04 --------Finding hello world Flexspi---------
+2020-04-17 10:24:04 hello world Flexspi
+2020-04-17 10:24:04 ---------------set boot pin as None---------------
+2020-04-17 10:24:05 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:24:06 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:24:07 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:24:07 ---------------reset board---------------
+2020-04-17 10:24:08 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="156" name="test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_[4]" time="37.208"><system-err>2020-04-17 10:24:08 ---------------set serial download mode---------------
+2020-04-17 10:24:09 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:24:11 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:24:12 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:24:12 ---------------reset board---------------
+2020-04-17 10:24:13 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:24:13 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:1,is_32bit:1 patch_offset=0x400 serialClkFreq=4 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_4.bin
+2020-04-17 10:24:13 vendor:micron
+pad:octal
+is_ddr:1
+is_32bit:1
+sclk_freq = 4
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_4.bin
+
+2020-04-17 10:24:13 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_4
+2020-04-17 10:24:31 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.102s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.784s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_4.bin
+2:26&gt;Okay (0.045s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.238s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:24:31 ---------------set flexspi boot---------------
+2020-04-17 10:24:32 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:24:33 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:24:34 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:24:34 ---------------reset board---------------
+2020-04-17 10:24:35 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:24:35 -------------Clear console buffer---------------
+2020-04-17 10:24:35 -------------Clear console buffer---------------
+2020-04-17 10:24:37 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:24:37 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 0e:50:06:e9:2b:7d
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:24:41 --------Finding hello world Flexspi---------
+2020-04-17 10:24:41 hello world Flexspi
+2020-04-17 10:24:41 ---------------set boot pin as None---------------
+2020-04-17 10:24:42 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:24:43 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:24:44 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:24:44 ---------------reset board---------------
+2020-04-17 10:24:45 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="156" name="test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_[5]" time="36.264"><system-err>2020-04-17 10:24:46 ---------------set serial download mode---------------
+2020-04-17 10:24:47 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:24:48 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:24:49 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:24:49 ---------------reset board---------------
+2020-04-17 10:24:50 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:24:50 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:1,is_32bit:1 patch_offset=0x400 serialClkFreq=5 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_5.bin
+2020-04-17 10:24:50 vendor:micron
+pad:octal
+is_ddr:1
+is_32bit:1
+sclk_freq = 5
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_5.bin
+
+2020-04-17 10:24:50 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_5
+2020-04-17 10:25:07 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.017s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.016s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.775s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_5.bin
+2:26&gt;Okay (0.046s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.251s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:25:07 ---------------set flexspi boot---------------
+2020-04-17 10:25:08 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:25:09 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:25:11 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:25:11 ---------------reset board---------------
+2020-04-17 10:25:12 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:25:12 -------------Clear console buffer---------------
+2020-04-17 10:25:12 -------------Clear console buffer---------------
+2020-04-17 10:25:14 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:25:14 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 76:ac:96:ba:41:3c
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:25:17 --------Finding hello world Flexspi---------
+2020-04-17 10:25:17 hello world Flexspi
+2020-04-17 10:25:17 ---------------set boot pin as None---------------
+2020-04-17 10:25:18 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:25:19 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:25:20 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:25:20 ---------------reset board---------------
+2020-04-17 10:25:21 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="156" name="test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_[6]" time="36.344"><system-err>2020-04-17 10:25:22 ---------------set serial download mode---------------
+2020-04-17 10:25:23 [&apos;and: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:25:24 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:25:25 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:25:25 ---------------reset board---------------
+2020-04-17 10:25:26 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:25:26 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:1,is_32bit:1 patch_offset=0x400 serialClkFreq=6 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_6.bin
+2020-04-17 10:25:26 vendor:micron
+pad:octal
+is_ddr:1
+is_32bit:1
+sclk_freq = 6
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_6.bin
+
+2020-04-17 10:25:26 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_6
+2020-04-17 10:25:44 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.996s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.006s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.768s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_6.bin
+2:26&gt;Okay (0.046s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.251s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:25:44 ---------------set flexspi boot---------------
+2020-04-17 10:25:45 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:25:46 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:25:47 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:25:47 ---------------reset board---------------
+2020-04-17 10:25:48 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:25:48 -------------Clear console buffer---------------
+2020-04-17 10:25:48 -------------Clear console buffer---------------
+2020-04-17 10:25:50 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:25:50 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 76:ac:96:ba:41:3c
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:25:54 --------Finding hello world Flexspi---------
+2020-04-17 10:25:54 hello world Flexspi
+2020-04-17 10:25:54 ---------------set boot pin as None---------------
+2020-04-17 10:25:55 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:25:56 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:25:57 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:25:57 ---------------reset board---------------
+2020-04-17 10:25:58 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="156" name="test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_[7]" time="36.557"><system-err>2020-04-17 10:25:58 ---------------set serial download mode---------------
+2020-04-17 10:25:59 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:26:00 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:26:01 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:26:01 ---------------reset board---------------
+2020-04-17 10:26:02 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:26:02 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:1,is_32bit:1 patch_offset=0x400 serialClkFreq=7 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_7.bin
+2020-04-17 10:26:02 vendor:micron
+pad:octal
+is_ddr:1
+is_32bit:1
+sclk_freq = 7
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_7.bin
+
+2020-04-17 10:26:02 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_7
+2020-04-17 10:26:20 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.01s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.004s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.78s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_ddr_4B_7.bin
+2:26&gt;Okay (0.047s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.24s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:26:20 ---------------set flexspi boot---------------
+2020-04-17 10:26:21 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:26:22 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:26:23 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:26:23 ---------------reset board---------------
+2020-04-17 10:26:24 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:26:25 -------------Clear console buffer---------------
+2020-04-17 10:26:25 -------------Clear console buffer---------------
+2020-04-17 10:26:26 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:26:26 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 92:ab:d5:ff:be:a8
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:26:30 --------Finding hello world Flexspi---------
+2020-04-17 10:26:30 hello world Flexspi
+2020-04-17 10:26:30 ---------------set boot pin as None---------------
+2020-04-17 10:26:31 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:26:32 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:26:33 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:26:33 ---------------reset board---------------
+2020-04-17 10:26:34 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="174" name="test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_[1]" time="36.593"><system-err>2020-04-17 10:26:35 ---------------set serial download mode---------------
+2020-04-17 10:26:36 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:26:37 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:26:38 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:26:38 ---------------reset board---------------
+2020-04-17 10:26:39 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:26:39 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=1 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_1.bin
+2020-04-17 10:26:39 vendor:micron
+pad:octal
+is_ddr:0
+is_32bit:1
+sclk_freq = 1
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_1.bin
+
+2020-04-17 10:26:39 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_1
+2020-04-17 10:26:57 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.025s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.791s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_1.bin
+2:26&gt;Okay (0.047s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.254s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:26:57 ---------------set flexspi boot---------------
+2020-04-17 10:26:58 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:26:59 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:27:00 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:27:00 ---------------reset board---------------
+2020-04-17 10:27:01 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:27:01 -------------Clear console buffer---------------
+2020-04-17 10:27:01 -------------Clear console buffer---------------
+2020-04-17 10:27:03 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:27:03 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 5a:38:0b:be:e1:c7
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:27:07 --------Finding hello world Flexspi---------
+2020-04-17 10:27:07 hello world Flexspi
+2020-04-17 10:27:07 ---------------set boot pin as None---------------
+2020-04-17 10:27:08 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:27:09 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:27:10 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:27:10 ---------------reset board---------------
+2020-04-17 10:27:11 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="174" name="test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_[2]" time="36.351"><system-err>2020-04-17 10:27:11 ---------------set serial download mode---------------
+2020-04-17 10:27:12 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:27:14 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:27:15 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:27:15 ---------------reset board---------------
+2020-04-17 10:27:16 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:27:16 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=2 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_2.bin
+2020-04-17 10:27:16 vendor:micron
+pad:octal
+is_ddr:0
+is_32bit:1
+sclk_freq = 2
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_2.bin
+
+2020-04-17 10:27:16 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_2
+2020-04-17 10:27:33 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.03s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.777s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_2.bin
+2:26&gt;Okay (0.046s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.253s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:27:33 ---------------set flexspi boot---------------
+2020-04-17 10:27:34 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:27:35 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:27:36 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:27:36 ---------------reset board---------------
+2020-04-17 10:27:37 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:27:38 -------------Clear console buffer---------------
+2020-04-17 10:27:38 -------------Clear console buffer---------------
+2020-04-17 10:27:39 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:27:39 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - ca:56:80:e3:05:39
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:27:43 --------Finding hello world Flexspi---------
+2020-04-17 10:27:43 hello world Flexspi
+2020-04-17 10:27:43 ---------------set boot pin as None---------------
+2020-04-17 10:27:44 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:27:45 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:27:46 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:27:46 ---------------reset board---------------
+2020-04-17 10:27:47 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="174" name="test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_[3]" time="36.560"><system-err>2020-04-17 10:27:48 ---------------set serial download mode---------------
+2020-04-17 10:27:49 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:27:50 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:27:51 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:27:51 ---------------reset board---------------
+2020-04-17 10:27:52 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:27:52 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=3 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_3.bin
+2020-04-17 10:27:52 vendor:micron
+pad:octal
+is_ddr:0
+is_32bit:1
+sclk_freq = 3
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_3.bin
+
+2020-04-17 10:27:52 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_3
+2020-04-17 10:28:10 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.998s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.006s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.792s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_3.bin
+2:26&gt;Okay (0.046s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.254s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:28:10 ---------------set flexspi boot---------------
+2020-04-17 10:28:11 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:28:12 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:28:13 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:28:13 ---------------reset board---------------
+2020-04-17 10:28:14 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:28:14 -------------Clear console buffer---------------
+2020-04-17 10:28:14 -------------Clear console buffer---------------
+2020-04-17 10:28:16 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:28:16 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 06:58:2f:93:a7:71
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:28:20 --------Finding hello world Flexspi---------
+2020-04-17 10:28:20 hello world Flexspi
+2020-04-17 10:28:20 ---------------set boot pin as None---------------
+2020-04-17 10:28:21 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:28:22 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:28:23 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:28:23 ---------------reset board---------------
+2020-04-17 10:28:24 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="174" name="test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_[4]" time="36.957"><system-err>2020-04-17 10:28:24 ---------------set serial download mode---------------
+2020-04-17 10:28:25 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:28:26 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:28:27 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:28:27 ---------------reset board---------------
+2020-04-17 10:28:28 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:28:28 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=4 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_4.bin
+2020-04-17 10:28:29 vendor:micron
+pad:octal
+is_ddr:0
+is_32bit:1
+sclk_freq = 4
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_4.bin
+
+2020-04-17 10:28:29 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_4
+2020-04-17 10:28:47 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.979s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.014s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.795s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_4.bin
+2:26&gt;Okay (0.048s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.24s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:28:47 ---------------set flexspi boot---------------
+2020-04-17 10:28:48 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:28:49 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:28:50 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:28:50 ---------------reset board---------------
+2020-04-17 10:28:51 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:28:51 -------------Clear console buffer---------------
+2020-04-17 10:28:51 -------------Clear console buffer---------------
+2020-04-17 10:28:53 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:28:53 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - aa:55:c7:aa:ce:ca
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:28:57 --------Finding hello world Flexspi---------
+2020-04-17 10:28:57 hello world Flexspi
+2020-04-17 10:28:57 ---------------set boot pin as None---------------
+2020-04-17 10:28:58 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:28:59 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:29:00 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:29:00 ---------------reset board---------------
+2020-04-17 10:29:01 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="174" name="test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_[5]" time="36.498"><system-err>2020-04-17 10:29:01 ---------------set serial download mode---------------
+2020-04-17 10:29:02 [&apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:29:03 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:29:04 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:29:04 ---------------reset board---------------
+2020-04-17 10:29:05 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:29:05 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=5 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_5.bin
+2020-04-17 10:29:06 vendor:micron
+pad:octal
+is_ddr:0
+is_32bit:1
+sclk_freq = 5
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_5.bin
+
+2020-04-17 10:29:06 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_5
+2020-04-17 10:29:23 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.013s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.004s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.014s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.785s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_5.bin
+2:26&gt;Okay (0.045s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.254s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:29:23 ---------------set flexspi boot---------------
+2020-04-17 10:29:24 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:29:25 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:29:26 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:29:26 ---------------reset board---------------
+2020-04-17 10:29:27 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:29:28 -------------Clear console buffer---------------
+2020-04-17 10:29:28 -------------Clear console buffer---------------
+2020-04-17 10:29:29 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:29:29 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 6e:53:41:a0:e0:8e
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:29:33 --------Finding hello world Flexspi---------
+2020-04-17 10:29:33 hello world Flexspi
+2020-04-17 10:29:33 ---------------set boot pin as None---------------
+2020-04-17 10:29:34 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:29:35 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:29:36 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:29:36 ---------------reset board---------------
+2020-04-17 10:29:37 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="174" name="test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_[6]" time="36.971"><system-err>2020-04-17 10:29:38 ---------------set serial download mode---------------
+2020-04-17 10:29:39 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:29:40 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:29:41 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:29:41 ---------------reset board---------------
+2020-04-17 10:29:42 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:29:42 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=6 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_6.bin
+2020-04-17 10:29:42 vendor:micron
+pad:octal
+is_ddr:0
+is_32bit:1
+sclk_freq = 6
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_6.bin
+
+2020-04-17 10:29:42 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_6
+2020-04-17 10:30:00 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (1.345s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.022s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.794s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_6.bin
+2:26&gt;Okay (0.045s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.252s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:30:00 ---------------set flexspi boot---------------
+2020-04-17 10:30:01 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:30:02 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:30:03 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:30:03 ---------------reset board---------------
+2020-04-17 10:30:04 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:30:05 -------------Clear console buffer---------------
+2020-04-17 10:30:05 -------------Clear console buffer---------------
+2020-04-17 10:30:06 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:30:06 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - d2:a9:57:f9:a4:8b
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:30:10 --------Finding hello world Flexspi---------
+2020-04-17 10:30:10 hello world Flexspi
+2020-04-17 10:30:10 ---------------set boot pin as None---------------
+2020-04-17 10:30:11 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:30:12 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:30:13 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:30:13 ---------------reset board---------------
+2020-04-17 10:30:14 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase><testcase classname="test_flexspi_boot.TestFlexspiBoot" file="test_flexspi_boot.py" line="174" name="test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_[7]" time="36.318"><system-err>2020-04-17 10:30:15 ---------------set serial download mode---------------
+2020-04-17 10:30:16 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_HIGH\r\n&apos;]
+2020-04-17 10:30:17 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:30:18 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:30:18 ---------------reset board---------------
+2020-04-17 10:30:19 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:30:19 D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe norDeviceInfo=vendor:micron,pad:octal,is_ddr:0,is_32bit:1 patch_offset=0x400 serialClkFreq=7 ifile=D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin ofile=D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_7.bin
+2020-04-17 10:30:19 vendor:micron
+pad:octal
+is_ddr:0
+is_32bit:1
+sclk_freq = 7
+Input file = D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+Output file = D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_7.bin
+
+2020-04-17 10:30:19 C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe -v test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_7
+2020-04-17 10:30:37 uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
+
+Your console don&apos;t support VT mode, fail back to verbose mode
+Build in config:
+	Pctl	 Chip		 Vid	 Pid	 BcdVersion
+	==================================================
+	SDPS:	 MX8QXP		 0x1fc9	 0x012f	 [0x0002..0xffff]
+	SDPS:	 MX8QM		 0x1fc9	 0x0129	 [0x0002..0xffff]
+	SDPS:	 MX8DXL		 0x1fc9	 0x0147
+	SDPS:	 MX28		 0x15a2	 0x004f
+	SDPS:	 MX815		 0x1fc9	 0x013e
+	SDPS:	 MX865		 0x1fc9	 0x0146
+	SDP:	 MX7D		 0x15a2	 0x0076
+	SDP:	 MX6Q		 0x15a2	 0x0054
+	SDP:	 MX6D		 0x15a2	 0x0061
+	SDP:	 MX6SL		 0x15a2	 0x0063
+	SDP:	 MX6SX		 0x15a2	 0x0071
+	SDP:	 MX6UL		 0x15a2	 0x007d
+	SDP:	 MX6ULL		 0x15a2	 0x0080
+	SDP:	 MX6SLL		 0x1fc9	 0x0128
+	SDP:	 MX7ULP		 0x1fc9	 0x0126
+	SDP:	 MXRT106X	 0x1fc9	 0x0135
+	SDP:	 MX8MM		 0x1fc9	 0x0134
+	SDP:	 MX8MQ		 0x1fc9	 0x012b
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x0000..0x04ff]
+	SDPV:	 SPL1		 0x0525	 0xb4a4	 [0x0500..0x9998]
+	SDPU:	 SPL		 0x0525	 0xb4a4	 [0x9999..0x9999]
+	FBK:	 		 0x066f	 0x9afe
+	FBK:	 		 0x066f	 0x9bff
+	FB:	 		 0x0525	 0xa4a5
+	FB:	 		 0x18d1	 0x0d02
+Wait for Known USB Device Appear...
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:SDPS: boot -f &gt;D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+3%6%9%12%15%18%21%24%27%30%33%37%40%43%46%49%52%55%58%61%64%67%70%74%77%80%83%86%89%92%95%98%100%2:26&gt;Okay (0.988s)
+New USB Device Attached at 2:26
+2:26&gt;Start Cmd:FB: ucmd setenv fastboot_buffer ${loadaddr}
+2:26&gt;Okay (0.005s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf probe 0
+2:26&gt;Okay (0.015s)
+2:26&gt;Start Cmd:FB[-t 40000]: ucmd sf erase 0 0x800000
+2:26&gt;Okay (4.787s)
+2:26&gt;Start Cmd:FB: download -f &gt;D:/Git_repo/rom_validation/8DXL_Auto\image\flexspi\test_flexspi_boot_cm4_flexspi_uboot_octal_sdr_4B_7.bin
+2:26&gt;Okay (0.047s)
+2:26&gt;Start Cmd:FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x400000
+2:26&gt;Okay (4.241s)
+2:26&gt;Start Cmd:FB: done
+2:26&gt;Okay (0s)
+#x1B[?25h
+
+
+
+2020-04-17 10:30:37 ---------------set flexspi boot---------------
+2020-04-17 10:30:38 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:30:39 [&apos;\r\n&apos;, &apos;Running command: IN2_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_HIGH\r\n&apos;]
+2020-04-17 10:30:40 [&apos;\r\n&apos;, &apos;Running command: IN3_HIGH\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_HIGH\r\n&apos;]
+2020-04-17 10:30:40 ---------------reset board---------------
+2020-04-17 10:30:41 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+2020-04-17 10:30:41 -------------Clear console buffer---------------
+2020-04-17 10:30:41 -------------Clear console buffer---------------
+2020-04-17 10:30:43 --------Finding Hit any key to stop autoboot---------
+2020-04-17 10:30:43 
+
+U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 (Apr 09 2020 - 19:54:53 +0000)
+
+CPU:   NXP i.MX8DXL RevA A35 at 1200 MHz at 27C
+
+Model: Freescale i.MX8DXL EVK Board
+Board: iMX8DXL EVK
+Boot:  FLEXSPI
+DRAM:  861.8 MiB
+MMC:   FSL_SDHC: 0, FSL_SDHC: 1
+Loading Environment from MMC... MMC: no card present
+*** Warning - No block device, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+
+ BuildInfo: 
+  - SCFW 9804c451, SECO-FW 570f503c, IMX-MKIMAGE a5317d1a, ATF cc58d01
+  - U-Boot 2019.04-5.4.24-2.1.0+gc3d2548f38 
+
+MMC: no card present
+Net:   
+Warning: ethernet@5b050000 (eth1) using random MAC address - 16:af:d1:f3:8a:cf
+eth1: ethernet@5b050000 [PRIME]
+Fastboot: Normal
+Normal Boot
+Hit any key to stop autoboot
+2020-04-17 10:30:47 --------Finding hello world Flexspi---------
+2020-04-17 10:30:47 hello world Flexspi
+2020-04-17 10:30:47 ---------------set boot pin as None---------------
+2020-04-17 10:30:48 [&apos;\r\n&apos;, &apos;Finish command: RESET_BOARD\r\n&apos;, &apos;\r\n&apos;, &apos;Running command: IN1_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN1_LOW\r\n&apos;]
+2020-04-17 10:30:49 [&apos;\r\n&apos;, &apos;Running command: IN2_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN2_LOW\r\n&apos;]
+2020-04-17 10:30:50 [&apos;\r\n&apos;, &apos;Running command: IN3_LOW\r\n&apos;, &apos;\r\n&apos;, &apos;Finish command: IN3_LOW\r\n&apos;]
+2020-04-17 10:30:50 ---------------reset board---------------
+2020-04-17 10:30:51 [&apos;\r\n&apos;, &apos;Running command: RESET_BOARD\r\n&apos;]
+</system-err></testcase></testsuite></testsuites>

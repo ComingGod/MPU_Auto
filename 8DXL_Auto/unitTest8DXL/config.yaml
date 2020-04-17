@@ -1,0 +1,49 @@
+Product: 8DXL
+BCU:
+    port: com5
+    baudrate: 115200
+COM:
+    CM4: com22
+    CM4_baudrate: 115200
+    uBoot: com23
+    uBoot_baudrate: 115200
+    SCFW: com24
+    SCFW_baudrate: 115200
+SD:
+    instance:
+    secondary_addr:
+Image:
+    serial_download: D:\Git_repo\rom_validation\8DXL_Auto\image\signed_384_scfw_uboot.bin
+    sd_cm4_ddr_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_sd_scfw_cm4_ddr_uboot.bin
+    sd_cm4_ddr_uboot_dummy_ocram: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_sd_scfw_cm4_ddr_uboot_dummy_ocram.bin
+    sd_cm4_tcm_uboot_dummy_ddr: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_sd_scfw_cm4_tcm_uboot_dummy_ddr.bin
+    emmc_cm4_ddr_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_emmc_scfw_cm4_ddr_uboot.bin
+    emmc_cm4_ddr_uboot_dummy_ocram: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_emmc_scfw_cm4_ddr_uboot_dummy_ocram.bin
+    emmc_cm4_tcm_uboot_dummy_ddr: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_emmc_scfw_cm4_tcm_uboot_dummy_ddr.bin
+    flexspi_cm4_flexspi: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi.bin
+    flexspi_cm4_flexspi_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot.bin
+    flexspi_cm4_flexspi_uboot_dummy_ocram: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ocram.bin
+    flexspi_cm4_flexspi_uboot_dummy_ddr: D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ddr.bin
+
+    flexspi_cm4_ddr_1M_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\performaceTest\signed_384_flexspi_scfw_cm4_1M_ddr_uboot.bin
+    flexspi_cm4_ddr_2M_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\performaceTest\signed_384_flexspi_scfw_cm4_2M_ddr_uboot.bin
+    flexspi_cm4_ddr_3M_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\performaceTest\signed_384_flexspi_scfw_cm4_3M_ddr_uboot.bin
+    flexspi_cm4_flexspi_1M_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\performaceTest\signed_384_flexspi_scfw_cm4_1M_flexspi_uboot.bin
+    flexspi_cm4_flexspi_2M_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\performaceTest\signed_384_flexspi_scfw_cm4_2M_flexspi_uboot.bin
+    flexspi_cm4_flexspi_3M_uboot: D:\Git_repo\rom_validation\8DXL_Auto\image\performaceTest\signed_384_flexspi_scfw_cm4_3M_flexspi_uboot.bin
+
+
+
+UUU:
+    path: C:\Users\nxa28190\Desktop\8DXL_Auto\tool\uuu.exe
+
+FCB_util:
+    path: D:\Git_repo\rom_validation\8DXL_Auto\tool\flexspi_config_util.exe
+
+
+
+
+
+
+
+

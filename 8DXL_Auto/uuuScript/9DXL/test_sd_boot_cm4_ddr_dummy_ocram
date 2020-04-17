@@ -1,0 +1,10 @@
+uuu_version 1.2.39
+SDPS: boot -f >D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_scfw_uboot.bin
+{
+FB: ucmd setenv fastboot_buffer ${loadaddr}
+FB[-t 40000]: ucmd mmc dev 1
+FB[-t 40000]: ucmd mmc erase 0 0x10000
+FB: download -f >D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_sd_scfw_cm4_ddr_uboot_dummy_ocram.bin
+FB[-t 20000]: ucmd mmc write ${fastboot_buffer} 0x40 0x2000
+FB: done
+}

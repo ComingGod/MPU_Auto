@@ -1,4 +1,0 @@
-2020-04-05 18:54:26 image_download.py    [line:48 ] INFO uuu (Universal Update Utility) for nxp imx chips -- libuuu_1.3.134-0-g0b47f4d
-
-Your console don't support VT mode, fail back to verbose mode
-

@@ -1,0 +1,10 @@
+uuu_version 1.2.39
+SDPS: boot -f >D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_scfw_uboot.bin
+{
+FB: ucmd setenv fastboot_buffer ${loadaddr}
+FB[-t 40000]: ucmd sf probe 0
+FB[-t 40000]: ucmd sf erase 0 0x800000
+FB: download -f >D:\Git_repo\rom_validation\8DXL_Auto\image\unsigned_flexspi_scfw_cm4_flexspi_uboot_dummy_ocram.bin
+FB[-t 20000]: ucmd sf write ${fastboot_buffer} 0x0 0x200000
+FB: done
+}
